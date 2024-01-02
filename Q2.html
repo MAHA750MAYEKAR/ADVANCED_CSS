@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q2</title>
+    <style>
+        .main {
+  perspective: 1200px;
+}
+
+
+
+.cube {
+  font-size: 4em;
+  width: 2em;
+  margin: 1.5em auto;
+  transform-style: preserve-3d;
+  transform: rotateX(30deg) rotateY(25deg);
+}
+
+.side {
+  position: absolute;
+  width: 2em;
+  height: 2em;
+  background: rgba(59, 144, 224, 0.5);
+  border: 1px solid rgb(27, 26, 26);
+  text-align: center;
+  line-height: 2em;
+}
+
+.front {transform: translateZ(1em);}
+.top {transform: rotateX(90deg) translateZ(1em);}
+.right {transform: rotateY(90deg) translateZ(1em);}
+.left {transform: rotateY(-90deg) translateZ(1em);}
+.bottom {transform: rotateX(-90deg) translateZ(1em);}
+.back {transform: rotateY(-180deg) translateZ(1em);}
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="cube">
+        <div class="side front">front</div>
+        <div class="side back">back</div>
+        <div class="side right">right</div>
+        <div class="side left">left</div>
+        <div class="side top">top</div>
+        <div class="side bottom">back</div>
+        </div>
+      </div>
+      
+    
+</body>
+</html>

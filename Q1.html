@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q1</title>
+    <style>
+        :root{
+            --primaryColor:#00b7ff;
+            --secondaryColor:#6c757d;
+        }
+        button{
+            height: 50px;
+            border-radius: 15px;
+
+        }
+        #primaryBtn{
+            background-color: var(--primaryColor);
+        }
+        #secondaryBtn{
+            background-color: var(--secondaryColor);
+        }
+
+
+    </style>
+</head>
+<body>
+    <h1>var() function in css</h1>
+    <p>The var() function is used to insert the value of a CSS variable.</p>
+    <p>A good way to use CSS variables is when it comes to the colors of your design. Instead of copy and paste the same colors over and over again, you can place them in variables.</p>
+    <p>First of all: CSS variables can have a global or local scope. <br>
+
+        Global variables can be accessed/used through the entire document, while local variables can be used only inside the selector where it is declared. <br>
+        
+        To create a variable with global scope, declare it inside the :root selector. The :root selector matches the document's root element. <br>
+        
+        To create a variable with local scope, declare it inside the selector that is going to use it.</p>
+    <br><br>
+
+
+    <div class="button">
+       <button id="primaryBtn">Primary Button</button>
+       <button id="secondaryBtn">Secondary Button</button>
+
+    </div>
+    
+</body>
+</html>
